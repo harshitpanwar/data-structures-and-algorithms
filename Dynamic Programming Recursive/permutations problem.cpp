@@ -4,6 +4,12 @@ using namespace std;
 static int dp[1001][801];
 // #define mod 1000000007;
 
+//Given two integers n and r, find nCr. Since the answer may be very large, calculate the answer modulo 109+7.
+
+
+
+
+
 
 int solve(int n, int r){
         if(r>n)
