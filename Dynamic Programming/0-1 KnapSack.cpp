@@ -1,5 +1,5 @@
 #include<bits/stdc++.h>
-#using namespace std;
+using namespace std;
    
 
     static int dp[1001][1001];
