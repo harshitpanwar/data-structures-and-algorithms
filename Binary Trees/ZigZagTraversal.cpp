@@ -31,7 +31,6 @@ public:
                 TreeNode* node = nodesQueue.front();
                 nodesQueue.pop();
 
-                // find position to fill node's value
                 int index = (leftToRight) ? i : (size - 1 - i);
 
                 row[index] = node->val;
@@ -42,7 +41,6 @@ public:
                     nodesQueue.push(node->right);
                 }
             }
-            // after this level
             leftToRight = !leftToRight;
             result.push_back(row);
         }
