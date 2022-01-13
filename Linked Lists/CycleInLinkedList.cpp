@@ -23,8 +23,8 @@ public:
         {
             slow = slow->next;
             fast = fast->next->next;
-            if(slow==fast){//detects that there is a cycle
-                slow = head;//slow assigning it to the head 
+            if(slow==fast){
+                slow = head;
                 while(slow != fast){
                     slow = slow->next;
                     fast = fast->next;                    
