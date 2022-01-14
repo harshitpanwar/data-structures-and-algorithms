@@ -4,12 +4,12 @@ using namespace std;
 
 struct TreeNode
 {
-    int data;
+    int val;
     struct TreeNode* left;
     struct TreeNode* right;
     
     TreeNode(int x){
-        data = x;
+        val = x;
         left = right = NULL;
     }
 };
