@@ -81,7 +81,7 @@ void evaluate_postfix(char *str)    {
         cout<<"INVALID EXPRESSION";
 }
 int main()  {
-    char str[25] = "63-*82/-";
+    char str[25] = "-*63/82";
     evaluate_postfix(str);
     return 0;
 }
