@@ -25,14 +25,28 @@ public:
             fast = fast->next->next;
             if(slow==fast){
                 slow = head;
-                while(slow != fast){
-                    slow = slow->next;
-                    fast = fast->next;                    
+
+                if(slow==fast){ 
+                    //condition for a circular linked list
+                    //this condition only executes if and only if the linked list is a circular linked list
+                        while(fast->next != slow) fast = fast->next;
+                }
+                else{
+                        while(slow != fast){
+                            slow = slow->next;
+                            fast = fast->next;                    
+                    }
                 }
                 return slow ;
             }
-           
         }
         return nullptr;
     }
 };
+
+int main(){
+
+
+
+
+}
