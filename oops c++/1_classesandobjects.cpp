@@ -27,8 +27,19 @@ class Hero{
 
      //properties
      //by default all properties are private 
-     
+     public:
      int health;
+
+};
+
+class Dhamaka{
+
+     int a;
+     char c;
+     //here in this class as we see we have used one integer and one character
+     // so the total size of the class should be 4+1=5
+     // but the total size comes out to be 8
+     // study about padding and greedy alignment
 
 };
 
@@ -50,7 +61,11 @@ int main(){
      cout<<"size of Empty class : "<<sizeof(e1)<<endl;//prints 1
      //in case of empty class 1 byte of memory is allocated for the identification of the class object
 
-     cout<<"health is :"<< h1.health;
+     cout<<"health is :"<< h1.health<<endl;//gargbage value will be printed
+
+     Dhamaka d;
+     cout<<"size of dhamaka object : "<<sizeof(d)<<endl;
+     
 
      return 0;
 }
